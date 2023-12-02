@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(244,244,252);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgba(70,67,67,255);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a :hover{
+    background-color: hsl(0, 0%, 15%);
+}
+
+.navbar li{
+    float:right;
+    overflow: hidden;
+
+}
+
+.navbar-title {
+    background-color: rgba(70,67,67,255);
+    color: aliceblue;
+    padding: 15px;
+    float: left;
+}
+
+aside{
+    width: 70%;
+    float: left;
+    padding: 25px;
+}
+
+article{
+    background-color: rgb(244,244,252);
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+section{    
+    background-color: rgb(244,244,252);
+    width: 33%;
+    float: left;
+    padding: 15px;
+}
+
+.navbar a.active{
+    background-color: rgb(66, 133, 244);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.navbar a:hover:not(.active){
+    background-color: black;
+    border-radius: 5px;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(244,244,252);
+    text-align: center;
+    padding: 25px;
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%
+    }
+}
